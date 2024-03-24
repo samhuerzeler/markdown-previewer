@@ -1,7 +1,8 @@
 {
   "name": "markdown-previewer",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "homepage": "https://samhuerzeler.github.io/markdown-previewer",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,8 +11,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "highlight.js": "^11.9.0",
+    "html-react-parser": "^5.0.6",
+    "marked": "^9.1.6",
+    "marked-highlight": "^2.0.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -21,6 +32,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   }
 }

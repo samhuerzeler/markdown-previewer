@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import styled from "styled-components";
 
-function App() {
-  const [count, setCount] = useState(0)
+import Editor from "./components/Editor";
+import Previewer from "./components/Previewer";
+import { initialText } from "./text-md";
+
+import "./App.css";
+
+const AppDiv = styled.div`
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: auto;
+`;
+
+const App = () => {
+  const [text, setText] = useState(initialText);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <main>
+      <AppDiv>
+        <Editor text={text} setText={setText} />
+        <Previewer text={text} />
+      </AppDiv>
+    </main>
+  );
+};
 
-export default App
+export default App;
