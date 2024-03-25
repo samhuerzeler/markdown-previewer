@@ -6,11 +6,11 @@
 
 :root {
   /* Colors */
-  --main-color: #FFA500;
-  --light-main-color: #FFE5D0;
-  --dark-main-color: #D35400;
-  --darker-main-color: #A04000;
-  --very-dark-main-color: #6E2C00;
+  --main-color: #3498DB;
+  --light-main-color: #C6E2FF;
+  --dark-main-color: #2980B9;
+  --darker-main-color: #1A5276;
+  --very-dark-main-color: #0E3854;
 }
 
 html,
@@ -18,5 +18,5 @@ body {
   font-size: 16px;
   font-family: "Arial", sans-serif;
   background-color: #FFEEDD;
-  color: #6E2C00;
+  color: #1A5276;
 }
